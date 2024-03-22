@@ -27,14 +27,32 @@
         </div>
         <!-- Restaurant Card 2 -->
         <div class="restaurant-card">
-          <img src="./image/restaurant2.jpg" alt="Restaurant 2 Image">
+          <img src="./image/mamou.jpg" alt="Mamou Image">
           <div class="restaurant-info">
-            <h3>Restaurant 2</h3>
-            <p>Description of Restaurant 2...</p>
+            <h3>Mamou</h3>
+            <p>Mamou Prime coming from the popular chain of restaurants “Mamou” is now ready to serve you at The Podium.</p>
+            <p>Mamou Prime serves quality and flavorful dishes. They have an immensely wide variety of offerings. Don’ t forget to try their popular home-kitchen dishes, especially their famous steak and pasta.</p>
             <button>Book Now</button>
           </div>
         </div>
-        <!-- Add more restaurant cards here -->
+        <!-- Restaurant Card 3 -->
+        <div class="restaurant-card">
+          <img src="./image/chinablue.jpg" alt="China Blue Image">
+          <div class="restaurant-info">
+            <h3>China Blue by Jereme Leung</h3>
+            <p>The premier Chinese restaurant of Conrad Manila. Conrad Manila has partnered with Chinese celebrity master chef, Jereme Leung, who is responsible for creating the menu for the restaurant. China Blue by Jereme Leung features dishes prepared using traditional Chinese cooking techniques with a modern approach to presentation.</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+        <!-- Restaurant Card 4 -->
+        <div class="restaurant-card">
+          <img src="./image/senju.jpg" alt="Senju Image">
+          <div class="restaurant-info">
+            <h3>Senju</h3>
+            <p>Artistically created and presented by a team of talented chefs that aim to bring out the real flavours of Japan, Senju’s gourmet creations will have you spellbound. The dishes use fresh, quality ingredients and are prepared in a cooking style that preserves each ingredient’s flavour and balances overall taste.</p>
+            <button>Book Now</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -92,15 +110,18 @@
  nav ul li a {
   text-decoration: none;
   color: #ffffff; /* Change the default link color to white */
-  font-size: 18px;
+  font-size: 28px; /* Increase font size further */
+  font-weight: 700; /* Make the font bolder */
+  font-family: "Garamond", serif; /* Use a fancy font */
 }
 
 nav ul li a:hover {
   color: #ffffff; /* Change color on hover */
-  text-shadow: 0 0 10px #ff4500; /* Add a glowing effect */
-  font-size: 20px; /* Increase font size on hover */
+  text-shadow: 0 0 10px #bfff00; /* Add a glowing effect */
+  font-size: 30px; /* Increase font size on hover */
   outline: none; /* Remove the outline */
 }
+
  
  .top-restaurants {
   position: relative;
@@ -145,15 +166,17 @@ nav ul li a:hover {
    margin-top: 10px;
  }
  
- button {
-   display: block;
-   width: 100%;
-   padding: 10px;
-   background-color: #54575a;
-   color: white;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   margin-top: 10px;
- }
+ .restaurant-info button {
+  display: block;
+  width: 100%;
+  padding: 15px; /* Adjust padding as needed */
+  background-color: #54575a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 50px; /* Set a fixed height for all buttons */
+  line-height: 20px; /* Adjust line height for proper text alignment */
+}
  </style>
