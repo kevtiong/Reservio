@@ -6,10 +6,10 @@
      <header>
        <nav>
          <ul>
-           <li><a href="#home">Home</a></li>
-           <li><a href="#restaurants">Restaurants</a></li>
-           <li><a href="#faqs">FAQs</a></li>
-           <li><a href="#contact">Contact Us</a></li>
+           <li><a href="/home">Home</a></li>
+           <li><a href="/restaurants">Restaurants</a></li>
+           <li><a href="/faqs">FAQs</a></li>
+           <li><a href="/contact">Contact Us</a></li>
          </ul>
        </nav>
      </header>
