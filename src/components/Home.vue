@@ -6,13 +6,13 @@
      <header>
       <div id="app">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/restaurants">Restaurants</RouterLink>
-        <RouterLink to="/faqs">FAQs</RouterLink>
-        <RouterLink to="/contact">Contact Us</RouterLink>
+        <button @click="goTo('/')">Home</button>
+          <button @click="goTo('/restaurants')">Restaurants</button>
+          <button @click="goTo('/faq')">FAQ</button>
+          <button @click="goTo('/contact')">Contact Us</button>
       </nav>
       <main>
-        <RouterView />
+        <router-view></router-view>
       </main>
       </div>
      </header>
@@ -72,10 +72,34 @@
     </div>
  </template>
 
+ 
+<script>
+export default {
+  methods: {
+    goTo(route) {
+      this.$router.push(route);
+    }
+  }
+}
+</script>
+
+
  <style scoped>
  .restocard{
   flex-wrap: wrap;
  }
+
+ button { /* Home, restaurants button */
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 0 10px; /* Adjust margin as needed */
+  background-color: #dde1e6; /* Button background color */
+  color: rgb(95, 62, 62); /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  font-size: 16px; /* Font size */
+}
+
  .header-container {
    position: absolute;
    top: 0;
