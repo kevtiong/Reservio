@@ -9,16 +9,30 @@
   </template>
   
   <script>
-  import Header from './Header.vue'; // Import the header component
-  import Footer from './Footer.vue'; // Import the footer component
-  
-  export default {
-    components: {
-      Header,
-      Footer
-    }
-  }
-  </script>
+import { createRouter, createWebHistory } from 'vue-router';
+import Header from './Header.vue'; // Import the header component
+import Footer from './Footer.vue'; // Import the footer component
+import Home from './components/Home.vue'; // Import your Home component
+import About from './components/About.vue'; // Import your About component
+
+const routes = [
+  { path: '/', component: Home },
+  { path: '/about', component: About }
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+export default {
+  components: {
+    Header,
+    Footer
+  },
+  router // Attach the router instance to the component
+}
+</script>
   
   <style>
   #app {
