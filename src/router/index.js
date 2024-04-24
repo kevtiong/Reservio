@@ -1,9 +1,8 @@
-import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/Home.vue'; // Adjust import paths for components
-import Contact from '../components/Contact.vue'; // Adjust import paths for components
-import FAQs from '../components/FAQs.vue'; // Adjust import paths for components
-import Restaurants from '../components/Restaurants.vue'; // Adjust import paths for components
+import Home from '../components/Home.vue'; // Adjusted import path for components
+import Contact from '../components/Contact.vue'; // Adjusted import path for components
+import FAQs from '../components/FAQs.vue'; // Adjusted import path for components
+import Restaurants from '../components/Restaurants.vue'; // Adjusted import path for components
 
 const routes = [
   { path: '/', component: Home },
@@ -18,6 +17,3 @@ const router = createRouter({
 });
 
 export default router;
-
-
-createApp(App).use(router).mount('#app');
